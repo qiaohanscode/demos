@@ -1,0 +1,14 @@
+/target/
+/bin/
+.classpath
+.project
+.metadata
+.settings/**
+.DS_Store
+*.iml
+*.http
+/.idea/
+.vscode
+
+application-local*.properties
+fcp/k8s/backend/application-fcp.properties
