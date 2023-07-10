@@ -9,6 +9,10 @@ public class Main {
         System.out.println("PATH:" + path);
         String user_home = System.getProperty("user.home");
         System.out.println("user.home"+ user_home);
+        //can be set with -Duser.language=de
+        System.out.println(String.format("user.language %s",System.getProperty("user.language")));
+        //can be set with -Duser.country=DE
+        System.out.println(String.format("user.country %s",System.getProperty("user.country")));
         System.out.println("Integer.BYTES: " + Integer.BYTES);
         System.out.println("Long.BYTES: " + Long.BYTES);
         System.out.println("Long.SIZE: " + Long.SIZE);

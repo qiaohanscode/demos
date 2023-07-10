@@ -9,7 +9,7 @@
 *.http
 .idea/
 .vscode
-/out/
+**/out/**
 
 
 
