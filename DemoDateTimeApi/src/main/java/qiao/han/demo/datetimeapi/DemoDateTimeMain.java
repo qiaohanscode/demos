@@ -2,13 +2,8 @@ package qiao.han.demo.datetimeapi;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
 
-public class Main {
+public class DemoDateTimeMain {
 
     public static void main(String[] args){
 
@@ -113,6 +108,10 @@ public class Main {
         System.out.println(String.format("Duration.parse(PT60.0S).toMinutes() %s", durOfChar2.toMinutes()));
         System.out.println(String.format("Duration.parse(PT60.0S).getSeconds() %s", durOfChar2.getSeconds()));
         System.out.println(String.format("Duration.parse(PT60.0S).toSeconds() %s", durOfChar2.toSeconds()));
+
+        System.out.println("------------------ Duration.parse(-P1DT1M11.22S) -------------------");
+        Duration durOfChar3 = Duration.parse("-P1DT1M11.22S");
+        System.out.println(String.format("Duration.parse(-P1DT1M11.22S) : %s",durOfChar3));
     }
 
     private static void period() {
