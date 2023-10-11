@@ -26,6 +26,10 @@ public class Main {
         System.out.println("doubleValue.getClass() : " + doubleValue.getClass() );
         System.out.println("doubleValue : " + doubleValue);
         System.out.println("double.doubleValue() : " + doubleValue.doubleValue());
+
+        double d = 26.22d;
+        System.out.println(String.format("(int)(%s/24) = %s",d,(int)(d/24)));
+
         BigDecimal bdDoubleFromDouble = new BigDecimal(doubleValue);
         System.out.println("bdDoubleFromDouble : " + bdDoubleFromDouble.toString());
         BigDecimal bdDoubleFromDoubleToString = new BigDecimal(doubleValue.toString());
@@ -63,5 +67,6 @@ public class Main {
         System.out.println("dblFromInt -- 42 : " + bdlFromInt.toString());
         System.out.println ("bdFromLong -- 123412345678901 : "+bdFromLong.toString());
         System.out.println("bdFromBigInteger -- " + bigInteger.toString() + ": "+bdFromBigInteger.toString());
+
     }
 }
